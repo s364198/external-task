@@ -34,4 +34,7 @@ nav {
     text-shadow: 0 0 5px rgba(#000, 0.8);
     letter-spacing: 2px;
   }
-
+  
+h3 {
+  text-align: center;
+}
