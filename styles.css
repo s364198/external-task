@@ -1,8 +1,10 @@
-body {
-  background-color: #669BBC;
-/*  font-family: "Oswald", sans-serif;*/
+body{
+  background-color: black;
 }
 
+.color {
+  background-color: #ECE2D5;
+}
 /*index.html*/
 * {
   box-sizing: border-box;
@@ -27,7 +29,7 @@ nav {
 }
 
 .active {
-  color: #86A873;
+  color: #191E24;
   text-decoration: none;
 }
 
@@ -42,7 +44,7 @@ nav {
 
 /*  change length inbetween pages*/
     padding: 0.6rem;
-    padding-left: 4rem;
+    padding-left: 2.2rem;
     
     color: inherit;
     text-shadow: 0 0 5px rgba(#000, 0.8);
@@ -68,10 +70,6 @@ h3 {
   font-size: 100px;
 }
 
-/*body {
-  all: unset;
-}
-*/
 .slides {
   color: white;
   font-size: 50px;
@@ -89,11 +87,11 @@ h3 {
   position: relative;
   
   &:nth-child(odd) {
-    background-color: #669BBC;
+    background-color: #9CBED3;
   }
   
   &:nth-child(even) {
-    background-color: #E6D8C7;
+    background-color: #ECE2D5;
   }
   
   a {
