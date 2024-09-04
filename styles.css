@@ -1,9 +1,6 @@
-body{
-  background-color: black;
-}
-
 .color {
   background-color: #ECE2D5;
+    font-family: "Koh Santepheap", serif;
 }
 /*index.html*/
 * {
@@ -107,4 +104,71 @@ h2 {
 
 p2 {
   color: black;
+}
+
+/*mission */
+
+.earth {
+  float: left;
+}
+
+.textlinks{
+  color: black;position: relative;
+    display: inline-block; 
+    letter-spacing: 1px;
+    padding: 0.6rem;
+    padding-left: 2px;
+  }
+}
+
+/*purpose*/
+
+.statistics {
+    width: 100%;
+}
+
+.statistics-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+}
+
+.statistics-card {
+    width: 150px;
+    height: auto;
+}
+
+.statistics-card > img {
+    max-width: 48px;
+    height: 48px;
+    display: block;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.statistics-card > p {
+    text-align: center;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.statistics-card > h2 {
+    text-align: center;
+    color: black;
+    margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 1470px) {
+    .statistics-container {
+        gap: 80px 200px;
+    }
+}
+
+.second {
+  padding-top: 50px;
 }
