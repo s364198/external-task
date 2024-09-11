@@ -151,11 +151,11 @@ p2 {
     margin-right: auto;
 }
 
-.statistics-card > p {
+/*.statistics-card > p {
     text-align: center;
     color: black;
     margin-bottom: 10px;
-}
+}*/
 
 .statistics-card > h2 {
     text-align: center;
@@ -172,6 +172,24 @@ p2 {
 .second {
   padding-top: 50px;
 }
+
+.statistics .stats {
+  transition: all 0.5s ease-in-out;
+    text-align: center;
+    color: black;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.statistics .stats:hover {
+  transform: scale(1.1);
+  color: seagreen;
+}
+
+
+
+
+
 
 /*swaps.html*/
 .tables {
@@ -208,7 +226,7 @@ margin-top: 0em;
 margin-bottom: 20px;
 }
 
-/*number styling - note that you will need to physically add in a span class*/
+/*number styling*/
 .et_pb_text ol li .number_divider {
 position: absolute;
 font-weight: 800;
@@ -244,4 +262,58 @@ left: -31px;
 .et_pb_text ol li:last-child:before {
 content: "";
 background: #ECE2D5;
+}
+
+
+/*shop.html*/
+
+
+.shopcards {
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.container .card {
+  position: relative;
+  width: 20rem;
+  height: 30rem;
+  background: #432798;
+  margin: 30px;
+  box-shadow: 0 2rem 4.5rem rgba(0, 0, 0, 0.3);
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+}
+.card-image {
+  width: 15rem;
+  height: 15rem;
+}
+.card-image img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.content h3 {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 20px;
+}
+.content p {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-top: 0.5rem;
 }
