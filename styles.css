@@ -26,7 +26,7 @@ nav {
 }
 
 .active {
-  color: #191E24;
+  color: #BB0A21;
   text-decoration: none;
 }
 
@@ -151,16 +151,17 @@ p2 {
     margin-right: auto;
 }
 
-/*.statistics-card > p {
+.statistics-card > p {
     text-align: center;
     color: black;
     margin-bottom: 10px;
-}*/
+}
 
 .statistics-card > h2 {
     text-align: center;
     color: black;
     margin-bottom: 15px;
+    font-size: 30px;
 }
 
 @media only screen and (max-width: 1470px) {
@@ -183,7 +184,7 @@ p2 {
 
 .statistics .stats:hover {
   transform: scale(1.1);
-  color: seagreen;
+  color: #90BE6D;
 }
 
 
@@ -282,15 +283,15 @@ background: #ECE2D5;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
+/*  flex-wrap: wrap;*/
 }
 .container .card {
   position: relative;
   width: 20rem;
   height: 30rem;
-  background: #432798;
+  background: #CCD5AE;
   margin: 30px;
-  box-shadow: 0 2rem 4.5rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
   border-radius: 1.5rem;
   display: flex;
   flex-direction: column;
@@ -309,11 +310,37 @@ background: #ECE2D5;
 }
 .content h3 {
   text-align: center;
-  font-size: 30px;
+  font-size: 25px;
   margin-top: 20px;
 }
 .content p {
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 20px;
   margin-top: 0.5rem;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
 }
