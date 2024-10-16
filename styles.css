@@ -19,7 +19,7 @@ nav {
   
   border-radius: 0.5rem;
   backdrop-filter: blur(10px);
-/*  background-color: #fff2;*/
+  background-color: #fff2;
   
   overflow: hidden;
   z-index: 100;
@@ -28,11 +28,13 @@ nav {
 .active {
   color: #BB0A21;
   text-decoration: none;
+  font-family: "Koh Santepheap", serif;
 }
 
 .links {
   color: #3D5467;
   text-decoration: none;
+  font-family: "Koh Santepheap", serif;
 }
 
   a {
@@ -53,6 +55,87 @@ h3 {
   padding-top: 30px;
   font-size: 50px;
 }
+
+h{
+  font-size: 80px;
+  color: black;
+}
+.indextext {
+  color: black;
+  font-size: 40px;
+}
+
+
+
+:root {
+  --alabaster: #ffffff;
+  --beige: #EAE9D0;
+  --citrine: #C9E3AC;
+  --chili-red: #90BE6D;
+  --murrey: #8F204F;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  appearance: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  isolation: isolate;
+}
+.button {
+  isolation: isolate;
+  color: var(--alabaster);
+  font-size: 26px;
+  line-height: 1.5;
+  font-weight: 600;
+  border-radius: 9999rem;
+  background: var(--chili-red);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 90px;
+  overflow: hidden;
+  transition: 200ms ease-out;
+  
+  & > .backdrop {
+    z-index: 1;
+    transition: 150ms ease-out;
+  }
+  &:is(:hover, :focus) {
+    background: color-mix(in oklab, var(--chili-red), black 40%);
+    transition: 250ms ease-out;
+    
+    & > .backdrop {
+     scale: 0.8;
+     opacity: 0.5;
+    }
+    & > .overlay {
+      transform: translateY(0);
+    }
+  }
+}
+
+.pagelinks {
+
+  height: 200px;
+  position: relative;
+  position: absolute;
+  top: 80%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+
+
 
 .container {
   position: relative;
@@ -122,7 +205,6 @@ p2 {
 }
 
 /*purpose*/
-
 .statistics {
     width: 100%;
 }
@@ -172,6 +254,7 @@ p2 {
 
 .second {
   padding-top: 50px;
+  color: black;
 }
 
 .statistics .stats {
@@ -344,3 +427,100 @@ background: #ECE2D5;
     margin-bottom: 20px;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+.lightbox {
+  /* Hidden lightbox image */
+  display: none;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+
+.lightboximage {
+    max-width: 90%;
+    max-height: 80%;
+    margin-top: 2%;
+  }
+
+  &:target {
+    /* Show the lightbox */
+    display: block;
+  }
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 3em;
+  color: #fff;
+  text-decoration: none;
+}
+
+.thumbnail {
+  max-width: 180px;
+}
+
+.thumbnail-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+.globe{
+  position: relative;
+  margin-left: 100px;
+  margin-top: 100px;
+  height: 200px;
+  width: 200px;
+  
+}
+.go{
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  background: url("https://maprepublic.com/wp-content/uploads/2017/05/kanawa-world-map-large.jpg");
+  border-radius: 50%;
+  box-shadow: inset 15px 0px 15px 1px black;
+  background-size: 350px;
+  animation-name: rotate;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform: rotate(-10deg);
+}
+
+@keyframes rotate {
+  from{ background-position: 0px;}
+  to{ background-position: 350px;}
+}
+
+
+
+
+
+
+.container {
+    margin-top: 3px;
+    margin-bottom: 6px;
+  }
