@@ -493,7 +493,6 @@ background: #ECE2D5;
   margin-top: 100px;
   height: 200px;
   width: 200px;
-  
 }
 .go{
   position: absolute;
@@ -504,7 +503,7 @@ background: #ECE2D5;
   box-shadow: inset 15px 0px 15px 1px black;
   background-size: 350px;
   animation-name: rotate;
-  animation-duration: 10s;
+  animation-duration: 15s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   transform: rotate(-10deg);
@@ -524,3 +523,29 @@ background: #ECE2D5;
     margin-top: 3px;
     margin-bottom: 6px;
   }
+
+
+
+
+
+
+
+
+
+
+
+  div.NavBar {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.NavBar div {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+.icons {
+  width: 350px;
+  height: 500px;
+}
