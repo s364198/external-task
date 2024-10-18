@@ -614,3 +614,9 @@ background: #ECE2D5;
 .test:hover ~ .test2 {
   display: none;
 }
+
+.video {
+  float: left;
+    color: black;
+  font-size: 40px;
+}
